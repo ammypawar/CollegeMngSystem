@@ -1,0 +1,14 @@
+
+
+<h1>Institute</h1>
+<table class="table table-responsive">
+<tr><th>Name</th><th>Update</th><th>Delete</th></tr>
+    {% for i in institute_list %}
+    <tr><td>{{ i.institute_name }}</td>  
+    <td><a href="edit/{{ i.id }}"><button type="button" class="btn btn-primary">Edit</button></a></td>
+    <td><a href="delete/{{ i.id }}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="new"><button type="button" class="btn btn-success">New</button></a></td>
+
